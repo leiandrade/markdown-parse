@@ -1,1 +1,2 @@
-[Here is a link] and some text (url.com)
+[brackets]text(link)
+[brackets](website.com)

@@ -1,0 +1,1 @@
+[link] and some text (google.com)
