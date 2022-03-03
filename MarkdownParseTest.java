@@ -41,7 +41,9 @@ public class MarkdownParseTest {
     @Test
     public void correctLink() throws IOException {
         String contents = Files.readString(Path.of("./snippet-1.md"));
-       assertEquals(new ArrayList<>(), MarkdownParse.getLinks(contents));
+        ArrayList<String> lst = new ArrayList<String>();
+        lst.add("link`");
+        assertEquals(new ArrayList<>(), MarkdownParse.getLinks(contents));
     }
 
 
