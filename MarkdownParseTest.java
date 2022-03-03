@@ -46,5 +46,17 @@ public class MarkdownParseTest {
         assertEquals(new ArrayList<>(), MarkdownParse.getLinks(contents));
     }
 
+    @Test
+    public void linkInside() throws IOException {
+        String contents = Files.readString(Path.of("./snippet-2.md"));
+        assertEquals(new ArrayList<>(), MarkdownParse.getLinks(contents));
+    }
 
+    @Test
+    public void extraText() throws IOException {
+        String contents = Files.readString(Path.of("./snippet-3.md"));
+        ArrayList<String> lst = new ArrayList<String>();
+        lst.add("text");
+        assertEquals(new ArrayList<>(), MarkdownParse.getLinks(contents));
+    }
 }
